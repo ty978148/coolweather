@@ -20,8 +20,8 @@ public class County extends DataSupport {
     public String getCountyName(){
         return countyName;
     }
-    public void setCountyName(String provinceName){
-        this.countyName=provinceName;
+    public void setCountyName(String countyName){
+        this.countyName=countyName;
     }
     public String getWeatherId(){
         return weatherId;
