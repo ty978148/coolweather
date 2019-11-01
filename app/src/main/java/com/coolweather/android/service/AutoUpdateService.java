@@ -29,7 +29,7 @@ public class AutoUpdateService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         updateWeather();
         updateBingPic();
-        AlarmManager manager=(AlarmManager)getSystemService(ACTIVITY_SERVICE);
+        AlarmManager manager=(AlarmManager)getSystemService(ALARM_SERVICE);
         int anHour=8*60*60*1000;
         long triggerAtTime= SystemClock.elapsedRealtime()+anHour;
         Intent i=new Intent(this,AutoUpdateService.class);
